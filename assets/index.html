@@ -8,18 +8,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-   <div id="header-placeholder"></div>
+    <!-- Aquí se carga el header desde templates/header.html -->
+    <div id="header-placeholder"></div>
 
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Descubrí el mundo del té</h1>
-                <p>Una experiencia de aroma y sabor directo a tu taza.</p>
-                <a href="tienda.html" class="btn">Ver variedades</a>
+    <!-- Contenido principal de la página -->
+       <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="images/te verde.jpg" alt="Té verde">
+                <div class="carousel-text">
+                    <h2>Té Verde</h2>
+                    <p>Refrescante y antioxidante, ideal para tu día a día.</p>
+                </div>
             </div>
+            <div class="carousel-slide">
+                <img src="images/te negro.jpg" alt="Té negro">
+                <div class="carousel-text">
+                    <h2>Té Negro</h2>
+                    <p>Intenso y lleno de sabor, una infusión clásica.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/te chai.jpg" alt="Té chai">
+                <div class="carousel-text">
+                    <h2>Té Chai</h2>
+                    <p>Exótico y especiado, perfecto para una tarde relajada.</p>
+                </div>
+            </div>
+
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
         </div>
-    </header>
-   <div id="footer-placeholder"></div>
-   <script src="scripts/main.js"></script>
+    </section>
+
+    <!-- Aquí se carga el footer desde templates/footer.html -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Carga del JavaScript principal -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>
