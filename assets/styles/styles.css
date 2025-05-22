@@ -89,6 +89,60 @@ body {
 .btn:hover {
     background-color: #7a8d4c;
 }
+.carousel {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.carousel-slide {
+    display: none;
+    text-align: center;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.carousel-text {
+    padding: 1rem;
+    background-color: white;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
 
 /*__________________ FOOTER ____________________________*/
 .footer {
