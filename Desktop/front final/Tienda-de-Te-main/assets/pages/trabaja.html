@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabajá con nosotros | Tienda de Té</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/trabaja.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="trabaja-container">
+    <h1>Trabajá con nosotros</h1>
+    <p>¿Querés formar parte del mundo del té? En Tienda de Té estamos siempre buscando personas apasionadas y comprometidas.</p>
+
+    <section class="trabaja-texto">
+      <h2>¿Qué buscamos?</h2>
+      <p>
+        Nos encanta compartir el ritual del té con nuestros clientes. Buscamos personas responsables, con ganas de aprender y brindar una excelente atención.
+      </p>
+
+      <h2>¿Qué ofrecemos?</h2>
+      <p>
+        Un ambiente cálido, posibilidad de crecimiento, capacitación constante sobre nuestros productos y beneficios especiales por ser parte de nuestro equipo.
+      </p>
+    </section>
+
+    <section class="trabaja-formulario">
+      <h2>Postulate</h2>
+      <form id="form-trabaja">
+        <div class="form-group">
+          <label for="nombre">Nombre y apellido</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="cv">Adjuntar CV (PDF)</label>
+          <input type="file" id="cv" name="cv" accept=".pdf" />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Contanos por qué querés sumarte</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
