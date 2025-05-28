@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Tienda de Té</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/contacto.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    
+    <script src="../scripts/main.js"></script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="contacto-container">
+        <h1>Contacto</h1>
+        <p>¿Tenés alguna consulta sobre nuestros tés o tu pedido? Completá el formulario o escribinos.</p>
+
+        <section class="contacto-formulario">
+            <form id="form-contacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+
+        <section class="info-contacto">
+            <h2>También podés escribirnos a:</h2>
+            <p><strong>Email:</strong> contacto@tiendadete.com.ar</p>
+            <p><strong>WhatsApp:</strong> +54 9 11 2345 6789</p>
+            <p><strong>Dirección:</strong> Av. de los Tés 1234, Buenos Aires</p>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
