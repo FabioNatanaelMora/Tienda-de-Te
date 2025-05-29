@@ -1,0 +1,181 @@
+/*--------------ESTILOS HEADER---------*/
+.hero {
+    background-image: url('../images/menu-tienda/img-menu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+   background-attachment: fixed;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3em; 
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    display: inline-block; 
+    background-color: #f0c38e; 
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #d1a876; 
+}
+
+/*-------------- ESTILOS MAIN ----------------*/
+
+main {
+    padding: 40px 0;
+}
+
+.gallery-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 columnas de imagenes */
+    max-width: calc(33.333% - 20px); 
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    transition: transform 0.3s ease-in-out; /* Transición para el zoom */
+}
+
+/*zoom al pasar el mouse */
+.gallery-item:hover {
+    transform: scale(1.05); 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+
+.gallery-item.with-text .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.gallery-item.with-text:hover .overlay {
+    opacity: 1; 
+}
+
+.overlay h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+/*-------PDF-----------*/
+.menu-download-section {
+    background-color: #e0e0e0; 
+    padding: 80px 0; 
+    text-align: center; 
+    color: #333;
+}
+
+.menu-download-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.menu-download-section p {
+    font-size: 1.1em;
+    margin-bottom: 40px; 
+    max-width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para la imagen del PDF */
+.menu-pdf-image {
+    max-width: 250px; 
+    height: auto;
+    border: 5px solid #8B4513; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.menu-pdf-image:hover {
+    transform: translateY(-5px) scale(1.02); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* responsive */
+@media (max-width: 992px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px); /* 2 columnas tablet */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-item {
+        flex: 1 1 calc(100% - 20px); /* 1 columna cel */
+        max-width: calc(100% - 20px);
+    }
+}
