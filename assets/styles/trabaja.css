@@ -1,0 +1,62 @@
+.trabaja-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+  }
+  
+  .trabaja-container h1,
+  .trabaja-container h2 {
+    text-align: center;
+    color: #4d3b36;
+    margin-bottom: 20px;
+  }
+  
+  .trabaja-container p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .trabaja-formulario form {
+    background-color: #f7f3ef;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c1bebe;
+    border-radius: 4px;
+  }
+  
+  .btn-enviar {
+    background-color: #836953;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #5f4c3d;
+  }
+  
