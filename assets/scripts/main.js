@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function getBasePath() {
     const path = window.location.pathname;
     // Si la URL contiene /assets/pages/, subo un nivel
-    if (path.includes("/assets/pages/")) {
+  //  if (path.includes("/assets/pages/"))
+    if (path.includes("/pages/"))      
+        {
         return "../";
     }
     // Si estamos directamente en /assets/ (index.html) no subo nada
