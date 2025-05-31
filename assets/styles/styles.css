@@ -137,14 +137,151 @@ body {
 }
 
 /*__________________ FOOTER ____________________________*/
-.footer {
+/*.footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem 0;
     position: relative;
     z-index: 1;
+}*/
+
+.main-footer {
+    background-color: #333; 
+    color: #f5f2ed; 
+    padding: 40px 20px 20px; 
+    font-family: 'Open Sans', sans-serif;
 }
+
+.footer-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 30px; 
+}
+
+.footer-column {
+    flex: 1; 
+    min-width: 200px; 
+    margin-bottom: 20px; 
+}
+
+.footer-column h2 {
+    font-size: 1.8rem;
+    color: #f5f2ed; 
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-column ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px; 
+}
+
+.footer-column ul li a {
+    color: #ccc; 
+    text-decoration: none; 
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fff; 
+}
+
+/* Estilos para el formulario de suscripción */
+.subscribe-form form .form-group {
+    margin-bottom: 15px;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #555; 
+    border-radius: 4px;
+    background-color: #444; 
+    color: #fff; 
+    font-size: 0.95rem;
+    box-sizing: border-box; 
+}
+
+.subscribe-form input::placeholder {
+    color: #aaa; 
+}
+
+.btn-subscribe {
+    background-color: #836953; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.btn-subscribe:hover {
+    background-color: #6a5342;
+}
+
+/* Estilos para íconos de redes sociales */
+.social-icons {
+    margin-top: 30px;
+    text-align: center; 
+}
+
+.social-icons h4 {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.social-icon img {
+    width: 30px; 
+    height: 30px;
+    vertical-align: middle; 
+}
+
+/* Sección copyright */
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #444; 
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #999;
+}
+
 
 /*__________________ RESPONSIVE ____________________________*/
 html {
@@ -167,3 +304,26 @@ html {
 }
 
 @media (max-width: 375px) {}
+
+/* Responsividad en footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .footer-column {
+        min-width: unset; 
+        width: 100%; 
+        margin-bottom: 30px;
+    }
+
+    .footer-column ul {
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form {
+        width: 80%; 
+    }
+}
