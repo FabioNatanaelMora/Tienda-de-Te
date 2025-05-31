@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda de Té</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Franquicias | Tienda de Té</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/franquicias.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container nav-container">
@@ -22,20 +24,65 @@
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="franquicias-intro">
         <div class="container">
-            <div class="hero-content">
-                <h1>Descubrí el mundo del té</h1>
-                <p>Una experiencia de aroma y sabor directo a tu taza.</p>
-                <a href="tienda.html" class="btn">Ver variedades</a>
-            </div>
+                <h1>TU PRÓXIMA FRANQUICIA DE TÉ</h1>
+                <p>Convertite en un referente del té en tu ciudad. Ofrecemos un modelo de negocio probado,
+                productos de alta calidad y el acompañamiento constante para que tu inversión sea un éxito.
+                Descubrí el fascinante mundo del té y compartilo con tus clientes.</p>
         </div>
     </header>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Tienda de Té. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <main>
+        <section class="franquicias-form">
+            <form id="form-franquicias-interes">
+                <p>Déjanos tus datos para recibir más información sobre nuestras franquicias.</p>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre-franquicia">Nombre</label>
+                        <input type="text" id="nombre-franquicia" name="nombre" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido-franquicia">Apellido</label>
+                        <input type="text" id="apellido-franquicia" name="apellido" required />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email-franquicia">E-mail</label>
+                        <input type="email" id="email-franquicia" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono-franquicia">Teléfono</label>
+                        <input type="tel" id="telefono-franquicia" name="telefono" />
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="como-llegaste-franquicia">¿Cómo llegaste a nosotros?</label>
+                    <input type="text" id="como-llegaste-franquicia" name="como_llegaste" />
+                </div>
+                <div class="form-group full-width">
+                    <label for="zona-interes-franquicia">¿En qué zona te interesaría instalar la franquicia?</label>
+                    <input type="text" id="zona-interes-franquicia" name="zona_interes" />
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="mensaje-franquicia">Contanos brevemente tu interés</label>
+                    <textarea id="mensaje-franquicia" name="mensaje" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">ENVIAR</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Carga el footer desde templates/footer.html -->
+    <div id="footer-placeholder"></div>
+    <!-- Carga del JavaScript principal -->
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
+
